@@ -3,9 +3,9 @@ import Testimonio from "../components/testimonio.jsx";
 
 function Testimoniopage() {
   return (
-    <div nane="testimonio" className="flex justify-center items-center py-20 bg-neutral-800">
+    <div name="testimonio" className="flex justify-center items-center py-20 bg-neutral-800">
       <div className="w-3/5 flex flex-col gap-10">
-        <h1 className="text-5xl mb-10 text-amber-700">Opiniones de nuestros clientes</h1>  
+        <h1 className="text-6xl font-semibold mb-10 text-orange-400">Opiniones de nuestros clientes</h1>  
         <Testimonio
           nombre={"Carlos Montañez"}
           testimonio={

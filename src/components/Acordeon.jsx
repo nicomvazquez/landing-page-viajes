@@ -4,12 +4,12 @@ const Accordion = ({ title, answer }) => {
   const [accordionOpen, setAccordionOpen] = useState(false);
 
   return (
-    <div className="p-6 border-2 border-amber-700 bg-black bg-opacity-60 w-full rounded-lg">
+    <div className="p-6 border-2 border-orange-400 bg-black bg-opacity-60 w-full rounded-lg">
       <button
         onClick={() => setAccordionOpen(!accordionOpen)}
         className="flex justify-between w-full"
       >
-        <span className="text-2xl text-neutral-400">{title}</span>
+        <span className="text-3xl text-white font-semibold">{title}</span>
         {/* {accordionOpen ? <span>-</span> : <span>+</span>} */}
         <svg
           className="fill-indigo-500 shrink-0 ml-8"
@@ -44,7 +44,7 @@ const Accordion = ({ title, answer }) => {
             : "grid-rows-[0fr] opacity-0"
         }`}
       >
-        <div className="overflow-hidden text-neutral-400">{answer}</div>
+        <div className="overflow-hidden text-neutral-300 text-2xl">{answer}</div>
       </div>
     </div>
   );
